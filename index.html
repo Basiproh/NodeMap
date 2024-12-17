@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Espacio Latente</title>
+  <style>
+    body { margin: 0; overflow: hidden; font-family: Arial, sans-serif; }
+    #add-node-form.open { display: block; }
+    #add-node-form { 
+      position: fixed; 
+      top: 10px; 
+      left: 10px; 
+      background: rgba(255, 255, 255, 0.8); 
+      padding: 10px; 
+      border-radius: 5px; 
+      z-index: 10; 
+      display: none;
+    }
+  </style>
+</head>
+<body>
+  <button onclick="toggleForm()">Abrir/Cerrar Formulario</button>
+  <div id="3d-graph" style="width: 100%; height: 100vh;"></div>
+  <form id="add-node-form">
+    <h3>Agregar Nodo</h3>
+    <label for="node-id">ID:</label>
+    <input type="text" id="node-id" name="node-id" required><br>
+    <label for="node-text">Texto:</label>
+    <input type="text" id="node-text" name="node-text"><br>
+    <label for="node-audio">Audio:</label>
+    <input type="file" id="node-audio" name="node-audio" accept="audio/*"><br>
+    <label for="node-image">Imagen:</label>
+    <input type="file" id="node-image" name="node-image" accept="image/*"><br>
+    <button type="submit">Agregar</button>
+  </form>
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,12 @@
+{
+  "dependencies": {
+    "3d-force-graph": "^1.74.2",
+    "three": "^0.171.0"
+  },
+  "devDependencies": {
+    "vite": "^6.0.3"
+  },
+  "scripts": {
+    "dev": "vite"
+  }
+}
